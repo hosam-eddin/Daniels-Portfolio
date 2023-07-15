@@ -1,0 +1,605 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vmax;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --dark-color: #212529;
+  --light-white: #f4f4f4;
+}
+.text-gray {
+  color: #5b5b5b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+.bg-dark-section {
+  background-color: #f7f7f7;
+}
+.fit-content {
+  width: fit-content;
+}
+
+/*<<===============
+## Navbar Styles ##
+==================>>*/
+.navbar {
+  background: rgb(255, 255, 255);
+  z-index: 9999;
+}
+.navbar-toggler {
+  border: 0;
+  color: black;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0;
+}
+nav li a {
+  font-size: 5px;
+  position: relative;
+}
+nav a.active::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  margin-left: 49%;
+  transform: translateX(-50%);
+  background-color: black;
+}
+nav li a::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*<<===============
+## Header Section Styles ##
+==================>> */
+.home {
+  background-image: linear-gradient(#000a, #000a), url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.description {
+  max-width: 970px;
+  text-align: center;
+  margin-inline: auto;
+}
+.fit-content {
+  width: fit-content;
+}
+header h1 .anmi::after{
+  content: "";
+  animation: slider 10s infinite alternate ;
+}
+@keyframes slider {
+  0%{content: "Larry Daniels|";}
+  10%{content: "Larry Daniel|";}
+  11%{content: "Larry Danie|";}
+  12%{content: "Larry Dani|";}
+  13%{content: "Larry Dan|";}
+  14%{content: "Larry Da|";}
+  15%{content: "Larry D|";}
+  16%{content: "Larry |";}
+  17%{content: "Larr|";}
+  18%{content: "Lar|";}
+  19%{content: "La|";}
+  20%{content: "L|";}
+  21%{content: "|";}
+  22%{content: "D|";}
+  23%{content: "De|";}
+  24%{content: "Dev|";}
+  25%{content: "Deve|";}
+  26%{content: "Devel|";}
+  27%{content: "Develo|";}
+  28%{content: "Develop|";}
+  29%{content: "Develope|";}
+  30%{content: "Developer|";}
+  39%{content: "Developer|";}
+  40%{content: "Develope|";}
+  41%{content: "Develop|";}
+  42%{content: "Develo|";}
+  43%{content: "Devel|";}
+  44%{content: "Deve|";}
+  45%{content: "Dev|";}
+  46%{content: "De|";}
+  47%{content: "D|";}
+  48%{content: "|";}
+  49%{content: "D|";}
+  50%{content: "De|";}
+  51%{content: "Des|";}
+  52%{content: "Desi|";}
+  53%{content: "Desig|";}
+  54%{content: "Design|";}
+  55%{content: "Designe|";}
+  56%{content: "Designer|";}
+  65%{content: "Designer|";}
+  75%{content: "Designe|";}
+  76%{content: "Design|";}
+  77%{content: "Desig|";}
+  78%{content: "Desi|";}
+  79%{content: "Des|";}
+  80%{content: "De|";}
+  81%{content: "D|";}
+  82%{content: "|";}
+  83%{content: "L|";}
+  84%{content: "La|";}
+  85%{content: "Lar|";}
+  86%{content: "Larr|";}
+  87%{content: "Larry|";}
+  88%{content: "Larry D|";}
+  89%{content: "Larry Da|";}
+  90%{content: "Larry Dan|";}
+  91%{content: "Larry Dani|";}
+  92%{content: "Larry Danil|";}
+  93%{content: "Larry Danile|";}
+  94%{content: "Larry Daniles|";}
+}
+
+/* scroll-icon  */
+.scroll {
+  position: absolute;
+  top: 90%;
+  animation: scroll 2s infinite;
+}
+@keyframes scroll {
+  0%,
+  100%,
+  80%,
+  90% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+/* About */
+.about_links li {
+  background-color: rgba(0, 0, 0, 0.705);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.img-bg::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -10px;
+  bottom: -30px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.about_links li a {
+  color: black;
+}
+.inner-shadow {
+  box-shadow: 1px 2px 10px 1px #0000003a inset;
+}
+.download-btn {
+  font-size: small;
+  padding: 8px;
+  padding-inline: 25px;
+}
+.download-btn:hover {
+  background-color: white;
+  color: black;
+}
+.contact-btn {
+  font-size: small;
+  padding-block: 8px;
+  padding-inline: 25px;
+  color: black;
+  background-color: white;
+}
+.contact-btn:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+/* services */
+.servides-section {
+  background-color: var(--light-white);
+  padding-block: 80px;
+}
+.repeated-heading h1 {
+  color: #5b5b5b;
+  position: relative;
+  z-index: 1;
+  font-weight: 900;
+}
+.repeated-heading h1::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+.icon-inner {
+  width: 70px;
+  height: 70px;
+  background-color: var(--light-white);
+  transition: 0.3s;
+}
+.services-content .item i {
+  color: var(--dark-color);
+  transition: 0.3s;
+  scale: 1.5;
+}
+.item:hover .icon-inner {
+  background-color: var(--dark-color);
+}
+.item:hover i {
+  color: var(--light-white);
+}
+.services-content .item h4 {
+  position: relative;
+}
+/* services */
+
+/* Portfolio */
+.portfolio-section {
+  padding-block: 80px;
+}
+.portfolio-elment:hover .img-bg-content {
+  bottom: 10px;
+  top: 10px;
+  opacity: 1;
+}
+.portfolio-elment:hover .portfolio-links li {
+  margin-top: 0;
+}
+.img-bg-content {
+  background-color: rgb(255, 255, 255);
+  bottom: 0px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.portfolio-links li {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  scale: 0.8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.portfolio-links li:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+.portfolio-links li i {
+  color: white;
+}
+.portfolio-links li:hover i {
+  color: black;
+}
+
+/* nav and tabs - portfolio*/
+
+.nav-pills .nav-link {
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+.nav-pills .nav-link.active {
+  color: black;
+  border-radius: 0;
+  background-color: transparent;
+}
+.modal {
+  height: 100%;
+  margin-top: 10%;
+}
+.nav-pills li button{
+  width: fit-content;
+  overflow: hidden;
+}
+.nav-pills .nav-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  margin-left: 49%;
+  transform: translateX(-50%);
+  background-color: black;
+}
+.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* End Of Portfolio */
+
+/* slider */
+
+.carousel-indicators [data-bs-target] {
+  background-color: #869791;
+  width: 12px;
+  height: 12px;
+  border: 0px solid var(--dark-color);
+}
+
+/* counter */
+.counter {
+  padding-block: 80px;
+}
+.animate01{
+  margin-bottom: 50px;
+}
+.animate01::after {
+  content: " 850 ";
+  position: absolute;
+  font-size: 2.5rem;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: typing 1s ease 10s ;
+}
+@keyframes typing {
+  0% {
+    content: "103 ";
+  }
+  14.28% {
+    content: "209 ";
+  }
+  28.5% {
+    content: "400 ";
+  }
+  42.8% {
+    content: "550 ";
+  }
+  57.12% {
+    content: "650 ";
+  }
+  71% {
+    content: "750 ";
+  }
+  100% {
+    content: "850 ";
+  }
+  
+}
+.animate04{
+  margin-bottom: 50px;
+}
+.animate04::after {
+  content: " 780 ";
+  position: absolute;
+  font-size: 2.5rem;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: typing4 1s ease 10s ;
+}
+@keyframes typing4 {
+  0% {
+    content: "53 ";
+  }
+  14.28% {
+    content: "109 ";
+  }
+  28.5% {
+    content: "200 ";
+  }
+  42.8% {
+    content: "350 ";
+  }
+  57.12% {
+    content: "450 ";
+  }
+  71% {
+    content: "650 ";
+  }
+  100% {
+    content: "780 ";
+  }
+  
+}
+.animate03{
+  margin-bottom: 50px;
+}
+.animate03::after {
+  content: " 9450 ";
+  position: absolute;
+  font-size: 2.5rem;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: typing3 1s ease 10s ;
+}
+@keyframes typing3 {
+  0% {
+    content: "55 ";
+  }
+  14.28% {
+    content: "300 ";
+  }
+  28.5% {
+    content: "845 ";
+  }
+  42.8% {
+    content: "1500 ";
+  }
+  57.12% {
+    content: "4500 ";
+  }
+  71% {
+    content: "7500 ";
+  }
+  100% {
+    content: "9450 ";
+  }
+  
+}
+.animate02{
+  margin-bottom: 50px;
+}
+.animate02::after {
+  content: " 230 ";
+  position: absolute;
+  font-size: 2.5rem;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: typing2 1s ease 10s ;
+}
+@keyframes typing2 {
+  0% {
+    content: "10 ";
+  }
+  14.28% {
+    content: "50 ";
+  }
+  28.5% {
+    content: "120 ";
+  }
+  42.8% {
+    content: "150 ";
+  }
+  57.12% {
+    content: "170 ";
+  }
+  71% {
+    content: "200 ";
+  }
+  100% {
+    content: "230 ";
+  }
+  
+}
+/* counter */
+
+/* team */
+.team-section {
+  padding-block: 80px;
+}
+.team-links i {
+  scale: 1.5;
+}
+.team-links li {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.986);
+  color: white;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  scale: 0.8;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.team-elment img {
+  transition: 0.3s;
+}
+.img-contain {
+  overflow: hidden;
+}
+.team-elment:hover img {
+  scale: 1.2;
+}
+.text-contain {
+  background-color: #5b5b5b;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.team-elment:hover .img-bg-content1 {
+  opacity: 1;
+  scale: 1;
+  transform: rotateY(360deg);
+}
+.img-bg-content1 {
+  background-color: rgb(255, 255, 255);
+  bottom: 5px;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: 0.5s;
+  transform: rotateY(180deg);
+  scale: 0.5;
+}
+
+/* End Of team */
+
+/* contact-section */
+
+/* contact-section */
+textarea {
+  width: 100%;
+  max-height: 200px;
+  min-height: 150px;
+  resize: vertical;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.form-control:focus,
+.form-control {
+  color: var(--bs-body-color);
+  background-color: #f4f4f4;
+  border-color: #f4f4f4;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0);
+}
+
+/* footer */
